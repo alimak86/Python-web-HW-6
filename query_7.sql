@@ -1,0 +1,1 @@
+SELECT students.student_name, marks.mark, groups.group_name, subjects.subject_name FROM students LEFT JOIN marks ON students.id = marks.student_id LEFT JOIN groups ON groups.id = students.student_group LEFT JOIN subjects ON subjects.id = marks.subject_id WHERE groups.id = 4 AND subjects.id = 5

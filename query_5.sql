@@ -1,0 +1,1 @@
+SELECT subjects.subject_name,proffessors.proffessor_name FROM subjects LEFT JOIN proffessors ON subjects.proffessor_id = proffessors.id WHERE proffessors.id = 2

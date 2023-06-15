@@ -1,0 +1,1 @@
+SELECT subjects.subject_name, students.student_name,proffessors.proffessor_name FROM subjects LEFT JOIN marks ON subjects.id = marks.subject_id JOIN students ON students.id = marks.student_id JOIN proffessors ON subjects.proffessor_id WHERE students.id = 24 AND proffessors.id = 4

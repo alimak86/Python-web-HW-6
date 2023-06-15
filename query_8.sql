@@ -1,0 +1,1 @@
+SELECT ROUND(AVG(marks.mark),2) FROM proffessors LEFT JOIN subjects ON subjects.proffessor_id = proffessors.id JOIN marks ON marks.subject_id = subjects.id WHERE proffessors.id = 3

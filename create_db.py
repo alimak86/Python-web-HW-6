@@ -16,6 +16,10 @@ class DB_server:
   def execute(self, sql):
     self.cur.executescript(sql)
 
+  def execute_query(self, sql):
+    self.cur.execute(sql)
+    return self.cur.fetchall()
+
 
 if __name__ == "__main__":
 
